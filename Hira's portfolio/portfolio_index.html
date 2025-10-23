@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_style.css">
+    <title>Hira's Portfolio</title>
+</head>
+<body>
+    <!--  Navigation Bar -->
+    <div class="nav1">
+        <div id="title"><a href="#home"><h1>Hira's Portfolio</h1></a></div>
+        <div class="introduction"><a href="#introduction"><h3>Introduction</h3></a></div>
+        <div class="study"><a href="#study"><h3>Sample work</h3></a></div>
+        <div class="skill"><a href="#skills"><h3>Skills</h3></a></div>
+        <div class="dailyplans"><a href="#dailyplans"><h3>Writting</h3></a></div>
+    </div>
+
+    <!--  Home Section -->
+    <section id="home" class="headintro">
+        <div class="para">
+            <h1 class="typing"></h1>
+            <p id="parra">I’m Hira, a passionate and dedicated learner with a strong focus on creativity, technology, and personal growth.
+             I aim to build meaningful digital experiences and continuously improve my skills to make an impact through innovation and design.
+            </p>
+            <div class="btn">
+                <button>Email me</button>
+                <button>My Channel</button>
+            </div>
+        </div>
+        <div class="heropic"></div>
+    </section>
+
+    <!--  Introduction Section -->
+    <section id="introduction" class="section">
+       <div class="left-intro">
+        <h2>Introduction</h2>
+         <p class="text">🎀Hi, I’m Hira Moni, born on April 21, 2010, and proudly from Bangladesh. I’m a creative and ambitious learner who believes in growth through curiosity, consistency, and innovation. Ever since I started exploring the digital world, I’ve been fascinated by how technology and design can come together to create something powerful — something that connects people and ideas.
+
+                I’m currently studying in Class 8 at Sharsha Government Technical School and College, where I focus on building a strong foundation in academics while developing my technical and creative skills. Alongside school, I’m learning web development and expanding my skills in HTML, CSS, JavaScript, and Python, with a vision to go deeper into AI and Machine Learning in the future.
+
+                Beyond technology, I’m also interested in business, fashion design, and digital creativity, because I believe true success comes from combining logic with imagination.
+
+                I’m constantly learning, experimenting, and improving — not just to become better at what I do, but to build something that reflects who I am. I believe every great creator starts small, and I’m taking every step to become one of those people who make a real difference through their work.
+
+                My mission is simple: learn deeply, create boldly, and inspire others through my journey.</p></div> 
+
+       <div class="introimage"></div>
+
+    </section>
+
+    <!--  Study Section -->
+<section id="study" class="section">
+  <h2>Sample Work</h2>
+
+  <div class="work">
+    <div class="samimg" id="sampleImage" title="Click to view"></div>
+
+    <p class="text">
+      Every project I create reflects my passion for design, innovation, and smart digital work. 
+      I focus on building modern and responsive websites using HTML, CSS, and JavaScript, where every detail — 
+      from layout to user experience — is crafted with purpose.
+
+      Alongside web design, I also work on digital product creation, developing creative assets and ideas that help brands and individuals grow online. 
+      I enjoy making things that not only look aesthetic but also deliver real value to users.
+
+      I’ve also explored Shopify, learning how to set up and manage online stores with a focus on clean design, brand presentation, and user trust. 
+      From product listings to customization, I aim to build stores that stand out and perform well.
+
+      Whether it’s a website, a digital product, or a Shopify brand, my goal is always the same — to combine creativity and technology 
+      in a way that inspires, connects, and makes an impact.
+    </p>
+
+  </div>
+</section>
+
+    <!-- Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="samplew.png" alt="Sample Work">
+            <p>
+            This project shows my ability to combine creativity and clean design in web development, digital products, and Shopify brand work.
+            </p>
+        </div>
+    </div>
+
+
+        <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skillay">
+
+      <!-- CODING -->
+      <div id="coding" onclick="openCodePopup()"onclick="sidetab()">
+        <div class="titlecode"><p>Codes</p></div>
+        <div class="example"><p>Web dev & Python mini projects</p></div>
+      </div>
+
+      <!-- DESIGN -->
+      <div class="design" onclick="openDesignPopup()"onclick="sidetab()">
+        <div class="titlecode"><p>Design</p></div>
+        <div class="example"><p>Design in every side</p></div>
+      </div>
+
+      <!-- CONTENT CREATION -->
+      <div class="content" onclick="openContentPopup()" onclick="sidetab()">
+        <div class="titlecode"><p>Content Creation</p></div>
+        <div class="example"><p>Created content</p></div>
+      </div>
+
+      <!-- SHOP MANAGEMENT -->
+      <div class="digitalpro" onclick="openShopPopup()" onclick="sidetab()">
+        <div class="titlecode"><p>Shop Management</p></div>
+        <div class="example"><p>E-commerce Management</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- POPUPS -->
+
+  <!-- CODING (PDF) -->
+  <div id="codePopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closeCodePopup()" onclick="sidetab()">>&times;</span>
+      <iframe src="Clone.pdf"></iframe>
+    </div>
+  </div>
+
+  <!-- DESIGN -->
+  <div id="designPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closeDesignPopup()"onclick="sidetab()">>&times;</span>
+      <iframe src="design.pdf"></iframe>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="contentPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closeContentPopup()"onclick="sidetab()">>&times;</span>
+        <video width="600px" height="500px" controls>
+        <source src="stop.mp4" type="video/mp4" alt="a little example of my contents">
+        </video>
+    </div>
+  </div>
+
+  <!-- SHOP -->
+  <div id="shopPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closeShopPopup()" onclick="sidetab()">&times;</span>
+      <img src="raw.png" alt="Little works ">
+    </div>
+  </div>
+
+
+    <!--  Dailyplans Section -->
+<section id="dailyplans" class="section">
+  <h2>Writings</h2>
+  <div class="upcontent">
+    <div class="writing-circle" style="background-image: url('weby.jpeg');" onclick="openWriting('writting1.pdf')" title="Writing 1"></div>
+    <div class="writing-circle" style="background-image: url('weby2.jpeg');" onclick="openWriting('writing2.pdf')" title="Writing 2"></div>
+    <div class="writing-circle" style="background-image: url('weby3.jpeg');" onclick="openWriting('writing3.pdf')" title="Writing 3"></div>
+    <div class="writing-circle" style="background-image: url('weby4.jpeg');" onclick="openWriting('writing4.pdf')" title="Writing 4"></div>
+  </div>
+</section>
+
+
+    <div class="footer">
+        <div class="textl">
+        <h1>Made By Hira | © 2025 | Hira</h1>
+        <h2>"The future looks better when it’s built by dreamers"</h2></div>
+    </div>
+
+    <script src="portfolio_script.js"></script>    
+</body>
+</html>
